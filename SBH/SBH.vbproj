@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5EE4F11C-CBCF-49B1-B101-01A75B478533}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SBH.My.MyApplication</StartupObject>
+    <RootNamespace>SBH</RootNamespace>
+    <AssemblyName>SBH</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SBH.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SBH.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddNewGuest.Designer.vb">
+      <DependentUpon>frmAddNewGuest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewGuest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookingRoom.Designer.vb">
+      <DependentUpon>frmBookingRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookingRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.vb">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputPayment.Designer.vb">
+      <DependentUpon>frmInputPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInputPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageBooking.Designer.vb">
+      <DependentUpon>frmManageBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageDailyPrice.Designer.vb">
+      <DependentUpon>frmManageDailyPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageDailyPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageEmployee.Designer.vb">
+      <DependentUpon>frmManageEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageGuest.Designer.vb">
+      <DependentUpon>frmManageGuest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageGuest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageHolidayPrice.Designer.vb">
+      <DependentUpon>frmManageHolidayPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageHolidayPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageRoom.Designer.vb">
+      <DependentUpon>frmManageRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageRoomRepairment.Designer.vb">
+      <DependentUpon>frmManageRoomRepairment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageRoomRepairment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageRoomType.Designer.vb">
+      <DependentUpon>frmManageRoomType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageRoomType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageRoomFacility.Designer.vb">
+      <DependentUpon>frmManageRoomFacility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageRoomFacility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoomAvailabilityreport.Designer.vb">
+      <DependentUpon>frmRoomAvailabilityreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoomAvailabilityreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransactionReport.Designer.vb">
+      <DependentUpon>frmTransactionReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransactionReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewPayment.Designer.vb">
+      <DependentUpon>frmViewPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAddNewGuest.resx">
+      <DependentUpon>frmAddNewGuest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookingRoom.resx">
+      <DependentUpon>frmBookingRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputPayment.resx">
+      <DependentUpon>frmInputPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageBooking.resx">
+      <DependentUpon>frmManageBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageDailyPrice.resx">
+      <DependentUpon>frmManageDailyPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageEmployee.resx">
+      <DependentUpon>frmManageEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageGuest.resx">
+      <DependentUpon>frmManageGuest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageHolidayPrice.resx">
+      <DependentUpon>frmManageHolidayPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageRoom.resx">
+      <DependentUpon>frmManageRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageRoomRepairment.resx">
+      <DependentUpon>frmManageRoomRepairment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageRoomType.resx">
+      <DependentUpon>frmManageRoomType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageRoomFacility.resx">
+      <DependentUpon>frmManageRoomFacility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoomAvailabilityreport.resx">
+      <DependentUpon>frmRoomAvailabilityreport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransactionReport.resx">
+      <DependentUpon>frmTransactionReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewPayment.resx">
+      <DependentUpon>frmViewPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
